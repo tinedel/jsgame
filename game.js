@@ -2,5 +2,11 @@ let topplayer = document.querySelector('.topplayer');
 let bottomplayer = document.querySelector('.bottomplayer');
 let ball = document.querySelector('.ball');
 
-topplayer.left=500;
-bottomplayer.left=500;
+let bottom = document.querySelector('.bottom');
+let top = document.querySelector('.top');
+let field = document.querySelector('.field');
+
+topplayer.style.left=((top.clientWidth - topplayer.clientWidth)/2) + "px";
+bottomplayer.style.left=((bottom.clientWidth - bottomplayer.clientWidth)/2) + "px";
+ball.style.left=((field.clientWidth - ball.clientWidth)/2) + "px";
+ball.style.top=((field.clientHeight - ball.clientHeight)/2) + "px";
