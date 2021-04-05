@@ -1,6 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .container {
   display: grid;
   width: 100vw;
   height: 100vh;
   grid-template-rows: 50px auto 50px;
+}
+
+.topplayer {
+  background-color: blue;
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.bottomplayer {
+  background-color: green;
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.ball {
+  backround-color: black;
+  width: 20px;
+  height: 20px;
+  position: relative;
 }
